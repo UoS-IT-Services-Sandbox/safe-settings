@@ -9,6 +9,7 @@ LABEL version="1.0" \
 ## These files are copied separately to allow updates
 ## to the image to be as small as possible
 COPY  package.json /opt/safe-settings/
+COPY  private-key.pem /opt/safe-settings/
 COPY  index.js /opt/safe-settings/
 COPY  lib /opt/safe-settings/lib
 
